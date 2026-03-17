@@ -1,5 +1,11 @@
 -- i saw this image on unknowncheatz i thought it'd be cool to make that in roblox (no it's not)
 -- https://files.catbox.moe/0wbxzd.png
+
+-- also i coded  this on stream after i typed udim theres a suggestion i used udim2.new
+-- and yuna said udim is an alternative keyword for udim2.new 
+-- clap for yuna guys literally not helping and harassing me for no reason 👏👏👏
+-- ik u would say its just a joke between friends but ya dk what i feel 😂
+
 local RobloxGui     = gethui() or cloneref(game:GetService("CoreGui"))
 local HttpService   = cloneref(game:GetService("HttpService"))
 local TweenService  = cloneref(game:GetService("TweenService"))
