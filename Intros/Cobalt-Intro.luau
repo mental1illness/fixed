@@ -6,6 +6,8 @@
 -- clap for yuna guys literally not helping and harassing me for no reason 👏👏👏
 -- ik u would say its just a joke between friends but ya dk what i feel 😂
 
+-- ^^ honestly this is just how i vent now thru this thing literally no one would notice this lol
+
 local RobloxGui     = gethui() or cloneref(game:GetService("CoreGui"))
 local HttpService   = cloneref(game:GetService("HttpService"))
 local TweenService  = cloneref(game:GetService("TweenService"))
