@@ -4135,11 +4135,11 @@ function Library:Window(Properties)
 		image = "rbxassetid://115194686863276",
 	})
 	local Watermark = Library:Watermark({
-		default = os.date("Atlanta |  - %b %d %Y - %H:%M:%S")
+		default = os.date("MamboWare |  - %b %d %Y - %H:%M:%S")
 	})
 	task.spawn(function()
 		while task.wait(1) do
-			Watermark.ChangeText(os.date("Atlanta - Beta - %b %d %Y - %H:%M:%S"))
+			Watermark.ChangeText(os.date("MamboWare |  - %b %d %Y - %H:%M:%S"))
 		end
 	end)
 	local SItems = StylePanel.Items
