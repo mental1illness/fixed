@@ -1,6 +1,8 @@
 -- this is still a shit code theres no automatic scaling like my love (swimhub)
 -- edit: nevermind there is an automatic scaling sorry i forgot why i named it larpvision tbh i think it was my deadline cheat project lol
 
+-- therse some padding errors
+
 local Utility = {
     ["Elements"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/mental1illness/modules/refs/heads/main/elements.lua"))();
 }
