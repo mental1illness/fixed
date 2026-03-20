@@ -11,6 +11,8 @@
 -- whats the point of being in a bad mood because you get harassed and you can't release the flame that's inside you because you're nervous or people will make a bad example out of you and ruin you and your mind even more
 -- i don't think therapy is going to help either.
 
+-- i really should quit this community now i dont like it anymore
+
 -- ik im not going to kill myself its really wtv
 
 -- ^^ honestly this is just how i vent now thru this thing literally no one would notice this lol
