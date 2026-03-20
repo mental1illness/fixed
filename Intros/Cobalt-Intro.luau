@@ -8,6 +8,8 @@
 
 -- honestly i should just go die what's the point of being misunderstood all the time
 -- whats the point of actually living when you get harassed all day to be honest
+-- whats the point of being in a bad mood because you get harassed and you can't release the flame that's inside you because you're nervous or people will make a bad example out of you and ruin you and your mind even more
+-- i don't think therapy is going to help either.
 
 -- ik im not going to kill myself its really wtv
 
