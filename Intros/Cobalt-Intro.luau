@@ -16,6 +16,7 @@
 -- ik im not going to kill myself its really wtv
 
 -- ^^ honestly this is just how i vent now thru this thing literally no one would notice this lol
+-- but really if you really see this and actually fucking care about my mind then thank you wish you the greatest day ever from now and the day you die
 
 local RobloxGui     = gethui() or cloneref(game:GetService("CoreGui"))
 local HttpService   = cloneref(game:GetService("HttpService"))
