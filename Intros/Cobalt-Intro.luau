@@ -6,6 +6,11 @@
 -- clap for yuna guys literally not helping and harassing me for no reason 👏👏👏
 -- ik u would say its just a joke between friends but ya dk what i feel 😂
 
+-- honestly i should just go die what's the point of being misunderstood all the time
+-- whats the point of actually living when you get harassed all day to be honest
+
+-- ik im not going to kill myself its really wtv
+
 -- ^^ honestly this is just how i vent now thru this thing literally no one would notice this lol
 
 local RobloxGui     = gethui() or cloneref(game:GetService("CoreGui"))
