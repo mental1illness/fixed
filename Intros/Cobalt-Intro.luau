@@ -1,26 +1,6 @@
 -- i saw this image on unknowncheatz i thought it'd be cool to make that in roblox (no it's not)
 -- https://files.catbox.moe/0wbxzd.png
 
--- also i coded  this on stream after i typed udim theres a suggestion i used udim2.new
--- and yuna said udim is an alternative keyword for udim2.new holy retard
--- clap for yuna guys literally not helping and harassing me for no reason 👏👏👏
--- ik u would say its just a joke between friends but ya dk what i feel 😂
-
--- honestly i should just go die what's the point of being misunderstood all the time
--- whats the point of actually living when you get harassed all day to be honest
--- whats the point of being in a bad mood because you get harassed and you can't release the flame that's inside you because you're nervous or people will make a bad example out of you and ruin you and your mind even more
--- i don't think therapy is going to help either.
-
--- being forgotten is actually better than being harassed! 
-
--- i really should quit this community now i dont like it anymore
-
--- ik im not going to kill myself its really wtv
-
--- ^^ honestly this is just how i vent now thru this thing literally no one would notice this lol
--- but really if you really see this and actually fucking care about my mind then thank you wish you the greatest day ever from now and the day you die
--- and leave this community asap it's not healthy
-
 local RobloxGui     = gethui() or cloneref(game:GetService("CoreGui"))
 local HttpService   = cloneref(game:GetService("HttpService"))
 local TweenService  = cloneref(game:GetService("TweenService"))
