@@ -59,7 +59,7 @@ local Utility = {}; do
 	function Utility:Create(_ClassName, _Properties, _Parent)
 		local _Object = Instance.new(_ClassName);
 		if _Properties and _Object then
-			for Key, Value in pairs(_Properties) do
+			for Key, Value in _Properties do
 				_Object[Key] = Value;
 			end
 		end
@@ -277,7 +277,7 @@ local Intro = {}; do
 
         do --  animations
             local Fade = {}
-                for Name, Line in pairs({["Line1"] = Line1, ["Line3"] = Line3, ["Line2"] = Line2, ["Line4"] = Line4}) do
+                for Name, Line in {["Line1"] = Line1, ["Line3"] = Line3, ["Line2"] = Line2, ["Line4"] = Line4} do
                     local Data = Intro.LineSize[Name]
                 if Name == "Line1" or Name == "Line2" then
                     Line.Size = UDim2.new(0, 1, Data.Y.Scale, Data.Y.Offset)
@@ -287,7 +287,7 @@ local Intro = {}; do
             end
             local OldDivider_Size = Divider.Size
             Divider.Size = UDim2.new(0, 1, OldDivider_Size.Y.Scale, OldDivider_Size.Y.Offset)
-            for Index, Value in pairs(ScreenGui:GetDescendants()) do
+            for Index, Value in ScreenGui:GetDescendants() do
                 local Obj = Value
                 if Obj:IsA("Frame") then
                     table.insert(Fade, {Obj, "BackgroundTransparency", Obj.BackgroundTransparency})
@@ -302,7 +302,7 @@ local Intro = {}; do
                     Obj.ImageTransparency = 1
                 end
             end
-            for Index, Value in ipairs(Fade) do
+            for Index, Value in Fade do
                 local Data = Value
                 if not Data[1]:IsA("TextLabel") then
                     Utility:Tween(
@@ -313,7 +313,7 @@ local Intro = {}; do
                 end
             end
             task.delay(0.35, function()
-                for Index, Value in ipairs(Fade) do
+                for Index, Value in Fade do
                     local Data = Value
                     if Data[2] == "TextTransparency" or Data[2] == "TextStrokeTransparency" then
                         Utility:Tween(
@@ -328,7 +328,7 @@ local Intro = {}; do
                     TweenInfo.new(2.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out),
                     { Size = OldDivider_Size }
                 )
-                for Name, Line in pairs({["Line1"] = Line1, ["Line3"] = Line3, ["Line2"] = Line2, ["Line4"] = Line4}) do
+                for Name, Line in {["Line1"] = Line1, ["Line3"] = Line3, ["Line2"] = Line2, ["Line4"] = Line4} do
                     local Data = Intro.LineSize[Name]
                     if Name == "Line1" or Name == "Line2" then
                         Line.Size = UDim2.new(0, 1, Data.Y.Scale, Data.Y.Offset)
@@ -357,7 +357,7 @@ local Intro = {}; do
                 { Size = SmallDividerSize }
             )
 
-            for Name, Line in pairs({Line1 = Line1, Line2 = Line2, Line3 = Line3, Line4 = Line4}) do
+            for Name, Line in {Line1 = Line1, Line2 = Line2, Line3 = Line3, Line4 = Line4} do
                 local Data = Intro.LineSize[Name]
                 local SmallSize
 
@@ -374,7 +374,7 @@ local Intro = {}; do
                 )
             end
 
-            for _, obj in ipairs(ScreenGui:GetDescendants()) do
+            for _, obj in ScreenGui:GetDescendants() do
                 if obj:IsA("Frame") then
                     Utility:Tween(
                         obj,
