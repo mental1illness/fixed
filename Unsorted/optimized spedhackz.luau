@@ -1,6 +1,6 @@
 local Flags = {
     ["Speed"] = { ["Value"] = true };
-    ["Speed/Value"] = { ["Value"] = 30 };
+    ["Speed/Value"] = { ["Value"] = 50 };
 };
 
 local Enum = Enum;
@@ -16,7 +16,7 @@ RunService.RenderStepped:Connect(function(Delta)
     local CurrentCameraCFrame = CurrentCamera.CFrame
 
     local Forward = NewVector3(CurrentCameraCFrame.LookVector.X, 0, CurrentCameraCFrame.LookVector.Z).Unit;
-    local Right   = NewVector3(CurrentCameraCFrameRightVector.X, 0, CurrentCameraCFrame.RightVector.Z).Unit;
+    local Right   = NewVector3(CurrentCameraCFrame.RightVector.X, 0, CurrentCameraCFrame.RightVector.Z).Unit;
 
     local IsWDown, IsSDown, IsADown, IsDDown  = InputService:IsKeyDown(Enum.KeyCode.W), InputService:IsKeyDown(Enum.KeyCode.S), InputService:IsKeyDown(Enum.KeyCode.A), InputService:IsKeyDown(Enum.KeyCode.D);
 
