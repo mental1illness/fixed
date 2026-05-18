@@ -1,6 +1,7 @@
 --ทําไม!!! ทําไมต้องทํา สิ่งนี้ด้วย!! ; translation: why!!! why do i have to do this!!
 -- dexsai told me to make a some kind of cheat for this game i didnt really get to finish it so here it is!
 -- (FUN FACT: This script has probably the best looking code out of all the cheats for Evade and mainly for evade. yes I am not talking about Project Aurora.)
+-- ^^ and also has some unnecessary methods to jump but it works ok!
 --[[
     Logs:
         Coded the base, 
