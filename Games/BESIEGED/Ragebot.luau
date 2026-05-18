@@ -1,4 +1,4 @@
--- what ever u wanna call this
+-- please patch this, layout stealer.....
 
 local ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"));
 local RunService        = cloneref(game:GetService("RunService"));
