@@ -7,7 +7,7 @@ local HITBOX_BUTTON        = LocalPlayer.PlayerGui.GameUI.Hitbox
 
 local GetNumberFromString = function(str)
     local BigGuy = str:gsub("<[^>]+>", "")
-    return tonumber(BigGuy:match("%d+"))
+    return tonumber(BigGuy:match("%d+%.?%d*"))
 end
 
 local GetCurrentTimer = function()
@@ -31,7 +31,8 @@ local DoesCurrentTimeMatch = function()
     if CurrentTime then
         local RealCurrentTime = GetNumberFromString(CurrentTime);
         local RealSeconds = GetNumberFromString(SECONDS_TO_SET_LABEL.Text)
-        if RealCurrentTime == RealSeconds or math.abs(RealCurrentTime - RealSeconds) <= 0.5 then
+        if RealCurrentTime >= RealSeconds then
+            -- print(RealCurrentTime, RealSeconds)
             return true
         end
     end
