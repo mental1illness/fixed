@@ -1,4 +1,5 @@
 -- this is also a shit code i don't care about this anymore have fun!
+-- this is also a shit code i don't care about this anymore have fun!
 
 local HttpService = cloneref(game:GetService("HttpService"))
 local Fonts = {}; do
@@ -50,8 +51,8 @@ local Constants= {
             "god you fucking wish"
         };
         ["Upper"] = {
-            ["Plain"] = "flo";
-            ["Colored"] = "haxx";
+            ["Plain"] = "money";
+            ["Colored"] = "bot";
         };
     }
 }
@@ -357,49 +358,56 @@ local Intro = {}; do
                 { Size = SmallDividerSize }
             )
 
-            for Name, Line in {Line1 = Line1, Line2 = Line2, Line3 = Line3, Line4 = Line4} do
-                local Data = Intro.LineSize[Name]
-                local SmallSize
+			task.spawn(function()
+				for Name, Line in {Line1 = Line4, Line2 = Line3, Line3 = Line2, Line4 = Line1} do
+					local Data = Intro.LineSize[Name]
+					local SmallSize
 
-                if Name == "Line1" or Name == "Line2" then
-                    SmallSize = UDim2.new(0, 1, Data.Y.Scale, Data.Y.Offset)
-                else
-                    SmallSize = UDim2.new(Data.X.Scale, Data.X.Offset, 0, 1)
-                end
+					if Name == "Line1" or Name == "Line2" then
+						SmallSize = UDim2.new(0, 1, Data.Y.Scale, Data.Y.Offset)
+					else
+						SmallSize = UDim2.new(Data.X.Scale, Data.X.Offset, 0, 1)
+					end
+					local Duration = 0.45
+					local Tween = Utility:Tween(
+						Line,
+						TweenInfo.new(Duration, Enum.EasingStyle.Linear, Enum.EasingDirection.In),
+						{ Size = SmallSize }
+					)
+					Tween.Completed:Wait()
+				end
+			end)
 
-                Utility:Tween(
-                    Line,
-                    TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
-                    { Size = SmallSize }
-                )
-            end
-
-            for _, obj in ScreenGui:GetDescendants() do
-                if obj:IsA("Frame") then
-                    Utility:Tween(
-                        obj,
-                        TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
-                        { BackgroundTransparency = 1 }
-                    )
-                elseif obj:IsA("TextLabel") then
-                    Utility:Tween(
-                        obj,
-                        TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
-                        {
-                            TextTransparency = 1,
-                            TextStrokeTransparency = 1
-                        }
-                    )
-                elseif obj:IsA("ImageLabel") then
-                    Utility:Tween(
-                        obj,
-                        TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
-                        { ImageTransparency = 1 }
-                    )
-                end
-            end
-
-            task.delay(1.3, function()
+            task.delay(0.1, function()
+				local Tween = nil;
+				for _, obj in ScreenGui:GetDescendants() do
+					if obj:IsA("Frame") then
+						Utility:Tween(
+							obj,
+							TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
+							{ BackgroundTransparency = 1 }
+						)
+					elseif obj:IsA("TextLabel") then
+						Utility:Tween(
+							obj,
+							TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
+							{
+								TextTransparency = 1,
+								TextStrokeTransparency = 1
+							}
+						)
+					elseif obj:IsA("ImageLabel") then
+						local CurrentTween = Utility:Tween(
+							obj,
+							TweenInfo.new(1.3, Enum.EasingStyle.Cubic, Enum.EasingDirection.In),
+							{ ImageTransparency = 1 }
+						)
+						if Tween == nil then
+							Tween = CurrentTween
+						end
+					end
+				end
+				Tween.Completed:Wait()
                 ScreenGui:Destroy()
             end)
         end)
