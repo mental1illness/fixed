@@ -1,5 +1,4 @@
 -- this is also a shit code i don't care about this anymore have fun!
--- this is also a shit code i don't care about this anymore have fun!
 
 local HttpService = cloneref(game:GetService("HttpService"))
 local Fonts = {}; do
