@@ -16,6 +16,8 @@ or i dont care actually
 🤦‍♂️
 ]]
 
+-- DUPLICATED SKINS ARE NOT MY FAULT!
+
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Client = getsenv(LocalPlayer.PlayerGui.Client)
 
