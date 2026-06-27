@@ -1,5 +1,6 @@
 -- please patch this, layout stealer.....
 
+
 local ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"));
 local RunService        = cloneref(game:GetService("RunService"));
 local Players           = cloneref(game:GetService("Players"));
@@ -30,7 +31,8 @@ end
 
 local Utils = {}; do
     Utils.FireBullet = function(EnemyCharacter: Model, HitPart: string)
-
+		pcall(function()
+			
         local Character = LocalPlayer.Character
         local Tool = Character:FindFirstChildOfClass("Tool")
         local TargetPart = EnemyCharacter:FindFirstChild(HitPart) or EnemyCharacter.PrimaryPart
@@ -60,6 +62,7 @@ local Utils = {}; do
                 false
             )
         end
+		end)
     end
 
     Utils.GetAllMobs = function(): {}
@@ -74,7 +77,7 @@ local Utils = {}; do
 
 
 end
-RunService.RenderStepped:Connect(function()
+RunService.PreRender:Connect(function()
     for Index, Value in Utils.GetAllMobs() do
         local Character = Value;
         if Character then
