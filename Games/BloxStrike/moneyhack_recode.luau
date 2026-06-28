@@ -2,6 +2,8 @@
 -- Took some stuff from Naix (like 2)
 -- QUIT BECAUSE BLOX STRIKE IS BORING.
 
+-- freezewo said that the nullhack (moneyhack) is detected which he took from the repo, the old version in the server is still functional and ud i hope.
+
 --[[
                                                                                                                                                                                       
                                                                                                                                                                                       
